@@ -1,0 +1,96 @@
+#map {
+    display: none;
+    height: 100%;
+    width: 100%
+}
+
+h1 {
+    text-align: center;
+    transition: opacity 0.5s ease;
+    /* Adds a smooth transition effect to the fade out */
+    opacity: 1;
+    padding-top: 180px;
+    /* Initial opacity set to fully visible */
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    /* Makes the button round */
+    background-color: #188ccf;
+    /* Green background color */
+    border: none;
+    /* Removes border */
+    color: white;
+    /* Text color */
+    padding: 15px 32px;
+    /* Size of the button */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+    /* Smooth transition for background color */
+}
+
+button:hover {
+    background-color: #45a049;
+    /* Slightly darker green when hovered */
+}
+
+button:active {
+    background-color: white;
+    /* Changes to white when clicked */
+    color: black;
+    /* Text color change for visibility */
+}
+
+#outerdiv {
+    width: 90%;
+    height: 90%;
+    position: fixed;
+    text-align: center
+}
+
+#map_go {
+    width: 70%;
+    height: 100%;
+    margin: 0px auto;
+    display: inline-block
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body {
+    animation: gradientTransition 15s ease infinite;
+    background-size: 400% 400%;
+}
+
+@keyframes gradientTransition {
+    0% {
+        background: linear-gradient(45deg, #6a85b6, #bac8e0);
+    }
+    25% {
+        background: linear-gradient(45deg, #bac8e0, #e3dccb);
+    }
+    50% {
+        background: linear-gradient(45deg, #e3dccb, #f4b6c2);
+    }
+    75% {
+        background: linear-gradient(45deg, #f4b6c2, #ffcccc);
+    }
+    100% {
+        background: linear-gradient(45deg, #ffcccc, #6a85b6);
+    }
+}
